@@ -5649,7 +5649,7 @@ gatsby-cli@^3.2.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.2.0:
+gatsby-core-utils@^2.1.0, gatsby-core-utils@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.2.0.tgz#def804d0fc2acde605c5d4da3c1ffbfc9aaf4e2a"
   integrity sha512-7T6aVJAj0u/VUg+zKOLuxyZLS/8KDQcDeEFCkKY0d7Pd4wV/QqKRLljr0TRVkivRZHXyWQI9fM3ox5DzfkHdCQ==
@@ -5869,7 +5869,7 @@ gatsby-recipes@^0.13.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-filesystem@^3.2.0:
+gatsby-source-filesystem@^3.1.0, gatsby-source-filesystem@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.2.0.tgz#1ceec22a068b235a084b15fb426898ef213fe995"
   integrity sha512-5CAMdSiasWCciJEneIU1RgS9IcHrTwl8i7xqPxhE9ihBa+Y1RSEX3FdtNGnK3Z5dYQVHMwR0NNOPJ3WZW0rJQQ==
@@ -5887,6 +5887,16 @@ gatsby-source-filesystem@^3.2.0:
     progress "^2.0.3"
     valid-url "^1.0.9"
     xstate "^4.14.0"
+
+gatsby-source-shopify-experimental@^1.16.3:
+  version "1.16.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.16.3.tgz#5216edaa927bb9b616fb7ed4e0b859c0cdd1fd00"
+  integrity sha512-BxqbRLGJaOmfq48URI4tQsq5vLJFnRXN83TX7SoW7XUKXkhc1rE9ZSbWSbr4mj6aFTrcAu82ulrGUusl9k3j1g==
+  dependencies:
+    gatsby-core-utils "^2.1.0"
+    gatsby-source-filesystem "^3.1.0"
+    node-fetch "^2.6.1"
+    sharp "^0.27.2"
 
 gatsby-source-shopify@^4.2.0:
   version "4.2.0"
@@ -11000,7 +11010,7 @@ shallow-compare@^1.2.2:
   resolved "https://registry.yarnpkg.com/shallow-compare/-/shallow-compare-1.2.2.tgz#fa4794627bf455a47c4f56881d8a6132d581ffdb"
   integrity sha512-LUMFi+RppPlrHzbqmFnINTrazo0lPNwhcgzuAXVVcfy/mqPDrQmHAyz5bvV0gDAuRFrk804V0HpQ6u9sZ0tBeg==
 
-sharp@^0.27.0:
+sharp@^0.27.0, sharp@^0.27.2:
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.27.2.tgz#a939775e630e88600c0b5e68f20593aea722252f"
   integrity sha512-w3FVoONPG/x5MXCc3wsjOS+b9h3CI60qkus6EPQU4dkT0BDm0PyGhDCK6KhtfT3/vbeOMOXAKFNSw+I3QGWkMA==
