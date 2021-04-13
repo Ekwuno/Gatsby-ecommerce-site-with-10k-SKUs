@@ -41,7 +41,8 @@ const IndexPage = ({ data }) => {
 			<main>
 				<div className={container}>
 					10k products and 25k variants. Shopify, Gatsby, Gatsby Cloud.
-					Instantly preview content, build in seconds.
+					Instantly preview content, build in seconds or hours? depending on the
+					mood.
 					<p className={em}>
 						Gatsby E-Commerce Starter Kit —{" "}
 						<span>
