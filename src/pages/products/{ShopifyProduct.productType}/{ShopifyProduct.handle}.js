@@ -11,7 +11,7 @@ export const query = graphql`
 			title
 			description
 			images {
-				gatsbyImageData(aspectRatio: 1, width: 640, placeholder: "BLURRED")
+				gatsbyImageData(aspectRatio: 1, width: 640)
 			}
 		}
 	}

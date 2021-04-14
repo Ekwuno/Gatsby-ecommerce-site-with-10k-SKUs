@@ -27,7 +27,7 @@ export const query = graphql`
 						}
 					}
 					images {
-						gatsbyImageData(aspectRatio: 1, width: 640, placeholder: "BLURRED")
+						gatsbyImageData(aspectRatio: 1, width: 640)
 					}
 					slug: gatsbyPath(
 						filePath: "/products/{ShopifyProduct.productType}/{ShopifyProduct.handle}"
