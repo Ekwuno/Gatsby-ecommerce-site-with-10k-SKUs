@@ -47,7 +47,7 @@ const ProductTypeIndex = ({
 			<h1>{productType}</h1>
 			<div className={gridItemOne}>
 				{products.nodes.map((p) => (
-					<Link>
+					<Link to={p.slug} className={productCardStyle}>
 						<div className={productImageStyle}>
 							<GatsbyImage image={p.images[0].gatsbyImageData} />
 						</div>
