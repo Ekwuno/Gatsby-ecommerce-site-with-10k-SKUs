@@ -15,11 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@sindresorhus/slugify": "^1.1.0",
     "gatsby": "^3.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "gatsby-plugin-image": "^1.2.1",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-source-shopify": "^5.0.0-rc.18",
     "gatsby-source-shopify-experimental": "^1.16.3",
     "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",

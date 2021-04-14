@@ -27,8 +27,11 @@ export const query = graphql`
 						}
 					}
 					images {
-						gatsbyImageData(aspectRatio: 1, width: 640)
+						gatsbyImageData(aspectRatio: 1, width: 640, placeholder: "BLURRED")
 					}
+					slug: gatsbyPath(
+						filePath: "/products/{ShopifyProduct.productType}/{ShopifyProduct.handle}"
+					)
 				}
 			}
 		}
@@ -40,17 +43,15 @@ const IndexPage = ({ data }) => {
 		<Layout>
 			<main>
 				<div className={container}>
-					10k products and 25k variants. Shopify, Gatsby, Gatsby Cloud.
-					Instantly preview content, build in seconds or hours? depending on the
-					mood.
+					{/* Face off on Colbyashi Maru */}
 					<p className={em}>
-						Gatsby E-Commerce Starter Kit —{" "}
+						Ecommerce with Gatsby and Shopify{" "}
 						<span>
 							{" "}
-							PoC in a day,
+							With unsplash photos
 							<strong>
 								{" "}
-								<u>with your own products </u>{" "}
+								<u> Ft. Obinna</u>{" "}
 							</strong>
 						</span>{" "}
 					</p>
@@ -65,10 +66,10 @@ const IndexPage = ({ data }) => {
 							<div key={product.title}>
 								<div className={productDetailsStyle}>
 									<h2 className={productHeadingStyle}> {product.title}</h2>
-									{formatPrice(
-										product.priceRangeV2.maxVariantPrice.currencyCode,
-										product.priceRangeV2.maxVariantPrice.amount
-									)}
+									{
+										(product.priceRangeV2.maxVariantPrice.currencyCode,
+										product.priceRangeV2.maxVariantPrice.amount)
+									}
 								</div>
 							</div>
 						</Link>
